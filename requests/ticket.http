@@ -1,0 +1,32 @@
+POST http://localhost:3000/tickets
+Content-Type: application/json
+
+{
+  "buyerPrice": 44000
+}
+
+###
+
+PATCH http://localhost:3000/tickets/2
+Content-Type: application/json
+
+{
+  "buyerPrice": 100000
+}
+
+###
+
+GET http://localhost:3000/tickets
+Accept: application/json
+
+###
+
+GET http://localhost:3000/tickets/1
+Accept: application/json
+
+###
+
+DELETE http://localhost:3000/tickets/1
+Accept: application/json
+
+###
